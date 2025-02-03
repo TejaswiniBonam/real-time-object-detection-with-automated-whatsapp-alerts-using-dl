@@ -14,7 +14,7 @@ The Human Detection and WhatsApp Alert System is an AI-driven security solution 
 * **Pywhatkit** - for sending alerts through WhatsApp.
 * **ngrok** - for giving public URLs to the local media files.
 * **apache server** - for giving public URLs to the local media files.
-* **shutil** - for moving files
+* **shutil** - for moving files, it says shutil  package is already in python so we can just directly import in the code without installing
 
 
 ## Installation
@@ -33,9 +33,27 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```bash
 python --version
 ```
+It says Pythob 3.13.0 for me
 ```bash
  pip install 
 ```
+```bash
+pip install opencv-python
+pip install opencv-python-headless  # If you're running this on a server without a GUI
+```
+
+## For YOLO8
+The latest version of YOLO as of October 2023 is YOLOv8, developed by Ultralytics. YOLOv8 is more efficient, accurate, and easier to use than previous versions. It comes with a Python package called ultralytics that simplifies object detection tasks.
+```bash
+pip install ultralytics
+from ultralytics import YOLO
+```
+
+
+
+# GITHUB LFS
+For object detection, we need yolo files, we can access them online, but having offline files makes the process easier aqnd faster.. AND Normal way doesn't support GITHUB storage, as they are kinda large files, so we need to use "GITHUB LFS (LARGE FILE STORAGE)" for storing these yolo files.
+
 
 
 
