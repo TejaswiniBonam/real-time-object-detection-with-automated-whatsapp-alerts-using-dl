@@ -55,6 +55,19 @@ from ultralytics import YOLO
 https://docs.github.com/en/repositories/working-with-files/managing-large-files
 For object detection, we need yolo files, we can access them online, but having offline files makes the process easier aqnd faster.. AND Normal way doesn't support GITHUB storage, as they are kinda large files, so we need to use "GITHUB LFS (LARGE FILE STORAGE)" for storing these yolo files.
 * with free github acc, You can have LFS space upto 2 GB.
+* upload yolo files in lfs
+```bash
+git lfs install
+git lfs track "yolo_files/coco.names"
+git lfs track "yolo_files/yolov4.cfg"
+git lfs track "yolo_files/yolov4.weights"
+git add yolo_files/coco.names
+git add yolo_files/yolov4.cfg
+git add yolo_files/yolov4.weights
+
+#if u need to check the status of your github LFS files
+git lfs ls-files
+```
 
 
 
