@@ -50,7 +50,21 @@ from ultralytics import YOLO
 ```
 
 
+# NGROK
+* install ngrok somewhere
+* place ngrok.exe file somewhere , like "C:/"
+* go to environment variables, got to system variables, click on Path and click edit
+* click new and add C:/ngrok.exe path
 
+# APACHE & XAMPP
+* start apache server using XAMPP
+* My port for apache is 8083
+* now go to ngrok.exe, cmd like thing will open
+```bash
+ngrok http 8083
+```
+* run the command, you will see a link that is needed to give public url to our local files
+* copy that link and paste it in your code before running
 # GITHUB LFS
 https://docs.github.com/en/repositories/working-with-files/managing-large-files
 For object detection, we need yolo files, we can access them online, but having offline files makes the process easier aqnd faster.. AND Normal way doesn't support GITHUB storage, as they are kinda large files, so we need to use "GITHUB LFS (LARGE FILE STORAGE)" for storing these yolo files.
