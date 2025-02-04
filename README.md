@@ -39,7 +39,9 @@ It says Pythob 3.13.0 for me
 ```
 ```bash
 pip install opencv-python
-pip install opencv-python-headless  # If you're running this on a server without a GUI
+pip install opencv-python-headless
+pip uninstall opencv-contrib-python
+pip install opencv-contrib-python  # If you're running this on a server without a GUI
 ```
 
 ## For YOLO8

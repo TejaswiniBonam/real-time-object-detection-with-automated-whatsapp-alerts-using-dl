@@ -104,15 +104,15 @@ while True:
                         print(f"Error moving file: {e}")
                 if not Whatsapp_flag:
                     Whatsapp_flag = True
-                    account_sid = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
-                    auth_token = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
-                    client = Client(account_sid, auth_token)
+                    X = 'A-Ca40ab86502b72a1ee2e3b5ef28195c53'
+                    Y = 'c-a3b32aa91b86d88a021915f72d8b1b9'
+                    client = Client(X, Y)
 
                     message = client.messages.create(
                     from_='whatsapp:+14155238886',
                     to='whatsapp:+919951280286',
                     body= 'Oops! Looks like an INTRUDER!!!!!!!',
-                    media_url='https://e288-2409-40f0-104d-c074-d2-800-156-59b9.ngrok-free.app/screenshot.jpg'
+                    media_url='https://86e9-2409-40f0-3f-bf07-c41b-b19e-5c5a-6a08.ngrok-free.app/screenshot.jpg'
                     )
                     time.sleep(5)
                     message2 = client.messages.create(
@@ -122,17 +122,6 @@ while True:
                     )
 
                     print(message.sid)
-                    """while user_response is None:
-                        try:
-                            last_message = client.messages.list(to='whatsapp:+919951280286', limit=1)
-                            if last_message:
-                                text = last_message[0].body.strip().lower()
-                                if text in ['yes', 'no']:
-                                    user_response = text.capitalize()
-                                    print(f"User response: {user_response}")
-                        except Exception as e:
-                            print(f"Error fetching user response: {e}")
-                        time.sleep(2)"""
                     while True:
                         last_message = client.messages.list(to='whatsapp:+919951280286', limit=1)
                         text = last_message[0].body.strip().lower()
